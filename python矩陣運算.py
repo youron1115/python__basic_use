@@ -39,3 +39,14 @@ np4=np.zeros((2,3))#用zeros產生矩陣，可reshape，另有ones可以使用
 print("zeros產生矩陣:\n",np4)
 np5=np.random.rand(2,3)#用random產生矩陣，可reshape
 print("random產生矩陣:\n",np5)
+np5_2=np.random.randint(0,100,2)
+#np5_2=np.random.randint(0,100,size=2)#size可加可不加
+#產生範圍內的整數矩陣元素(同list一樣不含上限)
+#如果設定high=None則是0-low(不含low)之間的整數
+np5_2=np.random.randint(0,100,(2,3))
+#np5_2=np.random.randint(0,100,size=(2,3))#size可加可不加
+#產生範圍內的整數矩陣元素(同list一樣不含上限)
+#如果設定high=None則是0-low(不含low)之間的整數，(2,3)為矩陣維度
+print("randint產生矩陣:\n",np5_2)
+np6=np.empty((2,3),dtype=int)#用empty產生矩陣，為記憶體中拉出的空間因此元素為隨機值
+print("empty產生矩陣:\n",np6)
