@@ -50,3 +50,19 @@ np5_2=np.random.randint(0,100,(2,3))
 print("randint產生矩陣:\n",np5_2)
 np6=np.empty((2,3),dtype=int)#用empty產生矩陣，為記憶體中拉出的空間因此元素為隨機值
 print("empty產生矩陣:\n",np6)
+
+
+x=np.array([[1,2],[3,4],[5,6]])
+x**=2
+print("x**=2:\n",x)
+
+print("x.shape[0]:",x.shape[0])
+print("x.shape[1]:",x.shape[1])
+
+for i in range(x.shape[0]):
+    print("透過x.shape[0]列出x[i]:",x[i])
+    
+x0=np.array([[1,2,3],[4,5,6]])
+
+print("x0.sum(0):",x0.sum(0))
+print("x0.sum(1):",x0.sum(1))
